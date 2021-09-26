@@ -8,7 +8,7 @@ LIBS=
 BUILD_DIR=$(curdir)/build
 
 gesture.node: clean
-	mkdir -f $(BUILD_DIR)
+	mkdir $(BUILD_DIR)
 	g++ lib.cpp -shared -fPIC -o $(BUILD_DIR)/gesture.node -Wall -Wextra $(LIBS) $(INCLUDE)
 
 clean:
